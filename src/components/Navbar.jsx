@@ -1,14 +1,14 @@
-import React, { useState } from 'react';
-import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
+import React, { useState } from "react"
+import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai"
 
 const Navbar = () => {
-  const [nav, setNav] = useState(false);
+  const [nav, setNav] = useState(true)
   const handleNav = () => {
-    setNav(!nav);
-  };
+    setNav(!nav)
+  }
   const navStyle = !nav
-    ? 'fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-[#000300] ease-in-out duration-500'
-    : 'fixed left-[-100%] ease-in-out duration-500';
+    ? "fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-[#000300] ease-in-out duration-500"
+    : "fixed left-[-100%] ease-in-out duration-500"
   return (
     <nav>
       <div className="flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-white">
@@ -37,6 +37,6 @@ const Navbar = () => {
         </div>
       </div>
     </nav>
-  );
-};
-export default Navbar;
+  )
+}
+export default Navbar
