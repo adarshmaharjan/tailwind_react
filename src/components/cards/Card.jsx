@@ -1,5 +1,5 @@
-import React from "react"
-import Single from "../../assets/single.png"
+import React from "react";
+import Single from "../../assets/single.png";
 
 const Card = ({
   headerIcon,
@@ -17,7 +17,7 @@ const Card = ({
     <div
       className={` w-full shadow-xl flex flex-col p-4 ${
         customMargin || "my-4"
-      } rounded-lg hover:scale-105 duration-300 ${customCardProperties}`}
+      } rounded-lg hover:scale-105 duration-300 hover:cursor-pointer ${customCardProperties}`}
     >
       <img
         src={headerIcon || Single}
@@ -50,7 +50,7 @@ const Card = ({
         Start Trial
       </button>
     </div>
-  )
-}
+  );
+};
 
-export default Card
+export default Card;
